@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "docker:build": "docker build -t docker-app .",
+    "docker:run": "docker run -p 8888:80 --name angular-app -d docker-app",
+    "docker:stop": "docker stop angular-app"
   },
   "private": true,
   "dependencies": {
